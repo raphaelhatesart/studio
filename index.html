@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>RAPHAEL</title>
+
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Arimo">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+	
+	@keyframes flashing {
+  0% {color: blue;}
+  25% {color: white;}
+  50% {color: orange;}
+  75% {color: white}
+  100% {color: blue;}
+
+	}
+
+	body {
+		font-family: 'Arimo', sans-serif;
+		font-weight: bold;
+	 	width: 100;
+  		margin: auto;
+	}
+	
+	myname {
+		margin: auto; 
+		position: fixed;
+		top: 0px;
+		width: 99%;
+		font-size: 20vw; 
+		text-align: center;
+		border: 3px;
+		color: blue;
+	}
+
+	contact {
+		margin: auto;
+		position: fixed;
+		bottom: 30px;
+		width: 99%;
+		font-size: 50px;
+		line-height: 1;
+		text-align: center;
+		transform: rotate(0deg);
+		border: 3px;
+		color: blue;
+		letter-spacing: 1px;
+	}
+
+	a{
+	text-decoration: none;	
+	}
+	
+	a:hover{
+		animation-name: flashing;
+  		animation-duration: 0.1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+
+	a:visited{
+color: blue;
+	}
+
+	pictures{
+	position: absolute;
+	width: 100%;
+	margin-top: 120px;
+	border: 3px;
+	z-index: -1;
+	margin-bottom: 120px;
+	}
+
+	img{
+		width: 70%;
+		display: block;
+		margin-left: auto;
+		margin-right:auto;
+		border: 3px;
+
+	}
+
+
+
+/* Below is the code for mobile phones: */
+
+
+@media only screen and (max-width:620px) {
+  
+  body{
+  width: 100;
+  margin: auto;	
+  }
+  	img{
+    width:90%;
+	}
+
+	myname{
+	top: 10px;
+	width: 100%;
+	border: 0px;
+	}
+
+	contact{
+	width: 100%;
+	font-size: 25px;
+	border: 0px;	
+	}
+
+	pictures{
+	width: 100%;
+	margin-bottom: 60px;
+	}
+
+  }
+	
+</style>
+</head>
+
+
+
+<body>
+	<myname>
+	<a>RAPHA&EumlL</a>
+	</myname>
+	<contact>
+	<a>RAPHA&EumlL LEWI <br> PORTLAND . OR <br> RAPHLEWI@GMAIL.COM <br> @RAPHAELHATESART </a> 
+	<br><a href="https://raphaellewi.biz/resume.pdf" target="_blank">CV</a>
+	/ <a href="https://raphaellewi.biz/thesis.pdf" target="_blank">LIFE IN EDEN</a>
+	/ <a href="https://raphaellewi.biz/mirrors.html" target="_blank">THE GAZE</a>
+	</contact>
+
+	<pictures>
+	<img src="images/home2.jpg"><br>
+	<img src="images/painting1.jpg"><br>
+	<img src="images/painting2.jpg"><br>
+	<img src="images/home1.jpg"><br>
+	<img src="images/home3.jpg"><br>
+	<img src="images/thesis1.jpg"><br>
+	<img src="images/thesis2.jpg"><br>
+	<img src="images/thesis3.jpg"><br>
+	<img src="images/thesis4.jpg"><br>
+	<img src="images/thesis5.jpg"><br>
+	<img src="images/thesis6.jpg"><br>
+	<img src="images/places1.jpg"><br>
+	<img src="images/downfall1.jpg"><br>
+	<img src="images/downfall2.jpg"><br>
+	<img src="images/downfall3.jpg"><br>
+	<img src="images/collage2.jpg"><br>
+	<img src="images/collage1.jpg"><br>
+	<img src="images/collage3.jpg"><br>
+	<img src="images/eden1.jpg"><br>
+	<img src="images/eden2.jpg"><br>
+	<img src="images/eden3.jpg"><br>
+	<img src="images/drawing1.jpg"><br>
+	</pictures>
+</body>
+
+</html>
