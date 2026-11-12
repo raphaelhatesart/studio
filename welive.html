@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<style>
+  body { margin: 0; background: #000; color: #fff; }
+
+  footer {
+    position: fixed;
+    bottom: 5vmin;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font: 3.4vmin/1.25 "Cinzel", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  body > div {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    padding-bottom: 7vmin;
+    font: 10.08vmin/1 "Boldonse", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    opacity: 0;
+    animation: flash 12s step-end infinite;
+    animation-delay: calc(var(--i) * .5s);
+  }
+
+  @keyframes flash {
+    0%           { opacity: 1; }
+    2.083%, 100% { opacity: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body > div { animation: none; }
+    body > div:first-child { opacity: 1; }
+  }
+</style>
+
+<footer>"We Live In…"<br>An Impermanent<br>Artist Statement</footer>
+
+<div style="--i:0">We</div>
+<div style="--i:1">Live</div>
+<div style="--i:2">In</div>
+<div style="--i:3">The</div>
+<div style="--i:4">Corpses</div>
+<div style="--i:5">Of</div>
+<div style="--i:6">Ancient</div>
+<div style="--i:7">Gods</div>
+<div style="--i:8">We</div>
+<div style="--i:9">Live</div>
+<div style="--i:10">In</div>
+<div style="--i:11">The</div>
+<div style="--i:12">Shadows</div>
+<div style="--i:13">Of</div>
+<div style="--i:14">Ancient</div>
+<div style="--i:15">Kings</div>
+<div style="--i:16">We</div>
+<div style="--i:17">Live</div>
+<div style="--i:18">In</div>
+<div style="--i:19">The</div>
+<div style="--i:20">Cogs</div>
+<div style="--i:21">Of</div>
+<div style="--i:22">Ancient</div>
+<div style="--i:23">Machines</div>
+</html>
